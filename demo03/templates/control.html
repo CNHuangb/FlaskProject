@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>控制语句Demo</title>
+   
+</head>
+
+<body>
+    <!--  -->
+    <h1>控制语句Demo</h1>
+
+    {% if age > 18 %}
+
+    <div>你已经满18岁，可以进入网吧！</div>
+ 
+
+    {% elif age == 18 %}
+
+
+    <div>你刚满18岁，需要父母陪同才能进入！</div>
+
+    {% else %}
+
+    <div>你未满18岁，不能进入网吧！</div>
+
+    {% endif %}
+
+
+    <h1>for循环</h1>
+
+    {% for book in books %}
+
+    <div>图书名称：{{ book.name }}, 图书作者：{{ book.author }}</div>
+
+    {% endfor %}
+
+
+    <!-- <ul>
+        {% for student in students %}
+            <li>姓名:{{ student.name }} 学号：{{ student.sno }}</li>
+
+        {% endfor %}
+    </ul> -->
+
+</body>
+</html>
